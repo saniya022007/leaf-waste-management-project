@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #f1f8f4;
 }
 
@@ -22,8 +22,9 @@ nav {
 
 nav a {
     color: white;
-    padding: 12px;
+    padding: 12px 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -40,23 +41,35 @@ section {
     box-shadow: 0 0 10px lightgray;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     text-align: center;
-    background: url('images/leaf.jpg') center/cover;
+    background: url('images/leaf.jpg') no-repeat center;
+    background-size: cover;
     color: white;
-    padding: 60px;
+    padding: 80px 20px;
 }
 
-/* Cards */
+/* Hero Text Visibility Fix */
+.hero h2, .hero p {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Cards Section */
 .cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     flex: 1;
+    min-width: 250px;
     padding: 20px;
     background: #d8f3dc;
     border-radius: 10px;
@@ -66,6 +79,7 @@ section {
 
 .card:hover {
     transform: scale(1.05);
+    background: #b7e4c7;
 }
 
 /* Gallery */
@@ -86,12 +100,18 @@ footer {
     text-align: center;
     background: #081c15;
     color: white;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 20px;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 }
