@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f1f8f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #2d6a4f, #40916c);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #1b4332;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #40916c;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background: url('images/leaf.jpg') center/cover;
+    color: white;
+    padding: 60px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background: #d8f3dc;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #081c15;
+    color: white;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
